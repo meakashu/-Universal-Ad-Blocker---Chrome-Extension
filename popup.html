@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Universal Ad Blocker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="icons/icon48.png" alt="Logo" class="logo">
+      <h1>Ad Blocker</h1>
+    </div>
+    
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-number" id="adsBlocked">0</div>
+        <div class="stat-label">Ads Blocked</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="control-group">
+        <label class="switch">
+          <input type="checkbox" id="toggleButton" checked>
+          <span class="slider"></span>
+        </label>
+        <span class="control-label">Enable Ad Blocking</span>
+      </div>
+    </div>
+
+    <div class="site-info">
+      <div class="current-site" id="currentSite"></div>
+      <button id="whitelistButton" class="whitelist-button">
+        <span class="button-text">Whitelist This Site</span>
+      </button>
+    </div>
+
+    <div class="footer">
+      <button id="resetStats" class="reset-button">Reset Statistics</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
